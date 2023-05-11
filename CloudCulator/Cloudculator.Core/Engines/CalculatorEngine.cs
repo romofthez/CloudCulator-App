@@ -1,13 +1,13 @@
 ﻿using Cloudculator.Core.Interfaces;
 
-namespace Cloudculator.Core
+namespace Cloudculator.Core.Engines
 {
     public class CalculatorEngine : ICalculatorEngine
     {
         public double Add(double left, double right)
         {
             var result = left + right;
-            if(double.IsInfinity(result))
+            if (double.IsInfinity(result))
             {
                 throw new OverflowException();
             };
