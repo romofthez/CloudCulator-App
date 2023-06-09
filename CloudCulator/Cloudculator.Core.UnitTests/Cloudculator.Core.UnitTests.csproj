@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cloudculator.Core\Cloudculator.Core.csproj" />
+  </ItemGroup>
+
 </Project>
