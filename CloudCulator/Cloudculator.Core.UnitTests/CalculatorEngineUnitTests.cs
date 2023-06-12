@@ -4,11 +4,11 @@ namespace Cloudculator.Core.UnitTests
 {
     public class CalculatorEngineUnitTests
     {
-        private CalculatorEngine service;
+        private CalculatorEngine _service;
 
         public CalculatorEngineUnitTests()
         {
-            service = new CalculatorEngine();
+            _service = new CalculatorEngine();
         }
 
         [Fact]
@@ -20,7 +20,7 @@ namespace Cloudculator.Core.UnitTests
             double expectedResult = 15.5;
 
             //Act
-            var result = service.Add(leftArgument, rightArgument);
+            var result = _service.Add(leftArgument, rightArgument);
 
             //Assert
             Assert.Equal(expectedResult, result);
@@ -35,7 +35,7 @@ namespace Cloudculator.Core.UnitTests
 
             //Act
             //Assert
-            Assert.Throws<OverflowException>(() => service.Add(leftArgument, rightArgument));
+            Assert.Throws<OverflowException>(() => _service.Add(leftArgument, rightArgument));
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace Cloudculator.Core.UnitTests
 
             //Act
             //Assert
-            Assert.Throws<OverflowException>(() => service.Add(leftArgument, rightArgument));
+            Assert.Throws<OverflowException>(() => _service.Add(leftArgument, rightArgument));
         }
 
         [Fact]
@@ -59,7 +59,7 @@ namespace Cloudculator.Core.UnitTests
 
             //Act
             //Assert
-            Assert.Throws<OverflowException>(() => service.Add(leftArgument, rightArgument));
+            Assert.Throws<OverflowException>(() => _service.Add(leftArgument, rightArgument));
         }
 
         [Fact]
@@ -71,7 +71,7 @@ namespace Cloudculator.Core.UnitTests
 
             //Act
             //Assert
-            Assert.Throws<OverflowException>(() => service.Add(leftArgument, rightArgument));
+            Assert.Throws<OverflowException>(() => _service.Add(leftArgument, rightArgument));
         }
 
         [Fact]
@@ -83,7 +83,7 @@ namespace Cloudculator.Core.UnitTests
 
             //Act
             //Assert
-            Assert.Throws<OverflowException>(() => service.Add(leftArgument, rightArgument));
+            Assert.Throws<OverflowException>(() => _service.Add(leftArgument, rightArgument));
         }
 
         [Fact]
@@ -95,7 +95,7 @@ namespace Cloudculator.Core.UnitTests
             var expected = double.NaN;
 
             //Act
-            var result = service.Add(leftArgument, rightArgument);
+            var result = _service.Add(leftArgument, rightArgument);
 
             //Assert
             Assert.Equal(expected, result);
@@ -110,7 +110,7 @@ namespace Cloudculator.Core.UnitTests
             var expected = double.NaN;
 
             //Act
-            var result = service.Add(leftArgument, rightArgument);
+            var result = _service.Add(leftArgument, rightArgument);
 
             //Assert
             Assert.Equal(expected, result);
@@ -125,7 +125,7 @@ namespace Cloudculator.Core.UnitTests
             var expected = double.NaN;
 
             //Act
-            var result = service.Add(leftArgument, rightArgument);
+            var result = _service.Add(leftArgument, rightArgument);
 
             //Assert
             Assert.Equal(expected, result);
